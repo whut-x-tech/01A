@@ -13,8 +13,8 @@ hero:
       text: 学习路线
       link: /route
     - theme: alt
-      text: 我的简历
-      link: http://imgtu.oss-cn-beijing.aliyuncs.com/pdf/2025_03_02/0581a3f7851b4bb2ad58776b14b020a8.pdf
+      text: 木犀101
+      link: https://muxi-studio.github.io/101/
 
 features:
   - title: 团队介绍
