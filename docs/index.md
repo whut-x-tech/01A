@@ -17,21 +17,21 @@ hero:
       link: http://imgtu.oss-cn-beijing.aliyuncs.com/pdf/2025_03_02/0581a3f7851b4bb2ad58776b14b020a8.pdf
 
 features:
-  - title: 个人介绍
+  - title: 团队介绍
     details: |
-      &emsp;🏫 学校：武汉理工大学<br>
-      &emsp;🎓 年级：大三<br>
-      &emsp;💻 专业：计算机科学与技术
-  - title: 荣誉和证书
+      &emsp;🚀 团队：武汉理工大学 X-Tech 学生技术团队<br>
+      &emsp;🎯 使命：打造专属于Whuter的开源CS成长指南平台<br>
+      &emsp;🌟 愿景：打破信息壁垒，助力更多学弟学妹快速成长
+  - title: 项目进展
     details: |
-      &emsp;🏆 全国大学生数学建模 - 国家级一等奖 (2024)<br>
-      &emsp;📜 CET-4、CET-6证书<br>
-      &emsp;🥈 校小程序开发比赛二等奖<br>
-  - title: 个人经历
+      &emsp;💡 目前已初步完成平台搭建并上线试运行<br>
+      &emsp;🛠️ 将参加校内相关技术比赛，逐步完善项目<br>
+      &emsp;🤝 将与华师木犀团队进行技术交流与合作<br>
+  - title: 技术方向
     details: |
-      &emsp;👨‍💻 海康威视 - 全栈开发实习生 (2024.12 - 2025.03)<br>
-      &emsp;&emsp;🛠️ 参与公司对外日志收集系统的设计与开发。<br>
-      &emsp;&emsp;📊 参与数据库设计与优化，提升系统查询性能。<br>
+      &emsp;💻 Web前端与后端开发、数据库设计与优化<br>
+      &emsp;📚 VitePress、Vue3、Node.js、MongoDB 等主流技术栈<br>
+      &emsp;🔧 持续开发和迭代校内技术产品，推动校园技术生态建设
 ---
 
 
