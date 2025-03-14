@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/x-tech.github.io/',
+  base: '/01A/',
   title: "x-tech 🏠",
   description: "null",
   head: [
