@@ -104,6 +104,4 @@ export default defineConfig({
     outline: 'deep', // 或者设置为数字，例如 2
     lastUpdated: true, // 启用最后更新时间
   }
-  ,
-  base: '/myroute/',
 })
