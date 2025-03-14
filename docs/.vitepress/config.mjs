@@ -14,7 +14,7 @@ export default defineConfig({
   ],
   themeConfig: {
       logo: '/hero-image.png', // 这里设置为图片的相对路径,
-      siteTitle: 'miqiu的奇喵小屋',
+      siteTitle: 'x-tech 🏠',
       // 基础Hero配置
       hero: {
         name: 'My Project',
