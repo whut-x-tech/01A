@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/x-tech.github.io/',
   title: "miqiu的奇喵小屋 🏠",
   description: "null",
   head: [
