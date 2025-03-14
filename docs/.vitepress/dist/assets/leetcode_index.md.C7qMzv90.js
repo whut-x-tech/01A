@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.C1EBK8dp.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"leetcode/index.md","filePath":"leetcode/index.md","lastUpdated":null}'),n={name:"leetcode/index.md"};function o(d,c,r,s,i,l){return a(),t("div")}const m=e(n,[["render",o]]);export{_ as __pageData,m as default};
