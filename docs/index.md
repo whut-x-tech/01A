@@ -3,8 +3,8 @@ layout: home
 
 
 hero:
-  name: "miqiu的奇喵小屋 🏠"
-  text: "这里是知识的沉淀之地，记录学习历程📚、分享技术实践与开发心得💡。期待与你一起进步，共同探索技术的奥秘！🌟"
+  name: "x-tech 🏠"
+  text: "这里是whuter的知识沉淀之地，记录学习历程📚、分享技术实践与开发心得💡。期待与你一起进步，共同探索技术的奥秘！🌟"
   image:
     src: /hero-image.png
     alt: Showcase
