@@ -27,20 +27,6 @@ theme: #32CD32
 | [面试算法通关秘籍](/leetcode/algo_mode) | 🔥🔥 | 手撕算法与笔试策略双模式解析 |
 | [排序算法基石](/leetcode/quick_merge) | 🔥 | 快排/归并的工程级实现 |
 
-## 🗺️ 学习路线
-```mermaid
-graph TD
-    A[新手入门] --> B[排序算法]
-    B --> C[快速排序]
-    B --> D[归并排序]
-    A --> E[数据结构]
-    E --> F[队列操作]
-    E --> G[栈应用]
-    C --> H[面试真题]
-    D --> H
-    F --> H
-    G --> H
-```
 
 ## 📝 每日训练计划
 ```checklist
@@ -72,19 +58,11 @@ graph TD
 3. 使用<mcsymbol name="algo_mode" filename="config.mjs" path="/usr/app/front/x-tech/x-tech.github.io/docs/.vitepress/config.mjs" startline="89" type="function"></mcsymbol>中的面试策略
 :::
 
----
 
 <Badge type="info" text="最后更新：2024-05-20" />  
 <Badge type="tip" text="MIT Licensed" />
 <Badge type="warning" text="推荐 Chrome 浏览器" />
-```
 
-### 主要优化点：
-1. **增强可视化**：添加 Mermaid 流程图展示学习路径
-2. **交互元素**：使用 Checklist 组件创建每日训练计划
-3. **卡片网格**：采用 card-grid 展示外部资源
-4. **动态关联**：通过 `<mcfile>` 和 `<mcsymbol>` 关联配置文件
-5. **多维度导航**：结合表格、卡片、流程图多种展示形式
 
 ### 效果预览：
 ![算法训练营页面效果](https://pic3.zhimg.com/80/v2-9c8d8b3d6f9d4a4d4e4e3b3e3d3e3e3e_720w.png)
