@@ -133,3 +133,4 @@ void transfer(Entry[] newTable) {
 4. [字母异位词分组](https://leetcode.com/problems/group-anagrams/)（哈希设计技巧） 
 
 💬 灵魂拷问：为什么HashMap的树化不直接采用整个哈希表结构树化？欢迎在评论区留下你的思考！💡  🚀 下期关键词预告：#线程安全 #CAS机制 #分段锁 #并发度优化 #sizeCtl控制
+<Artalk />

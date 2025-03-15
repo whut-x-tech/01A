@@ -130,3 +130,4 @@ public static void main(String[] args) {
 > 🎥 原理深入讲解推荐观看：[《Java手写线程池实战》](https://www.bilibili.com/video/BV1cJf2YXEw3/)
 
 通过手写线程池，不仅可以深入理解线程池的工作原理，还能根据实际业务需求进行定制化扩展。建议读者结合JDK原生线程池源码进行对比学习，收获会更大！🎯
+<Artalk />

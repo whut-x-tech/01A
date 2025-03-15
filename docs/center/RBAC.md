@@ -111,3 +111,4 @@ CREATE TABLE role_permissions (
 - [NIST RBAC 标准](https://csrc.nist.gov/projects/role-based-access-control)
 - [RBAC 维基百科](https://en.wikipedia.org/wiki/Role-based_access_control)
 
+<Artalk />
