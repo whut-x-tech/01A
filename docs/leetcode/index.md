@@ -64,7 +64,5 @@ theme: #32CD32
 <Badge type="warning" text="推荐 Chrome 浏览器" />
 
 
-### 效果预览：
-![算法训练营页面效果](https://pic3.zhimg.com/80/v2-9c8d8b3d6f9d4a4d4e4e3b3e3d3e3e3e_720w.png)
 
 <Artalk />
