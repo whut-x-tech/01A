@@ -104,5 +104,10 @@ export default defineConfig({
     // 启用目录索引
     outline: 'deep', // 或者设置为数字，例如 2
     lastUpdated: true, // 启用最后更新时间
-  }
+    // 页脚配置
+        footer: {
+          message: 'Released under the MIT License.',
+          copyright: 'Copyright © 2024-present x-tech'
+        }
+      }
 })
