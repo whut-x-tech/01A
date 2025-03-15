@@ -8,7 +8,7 @@ onMounted(() => {
     if (commentEl) {
       Artalk.init({
         el: '#comments',  // 绑定评论区
-        server: 'https://xtech-comment.liuqiao.top',  // API 地址
+        server: 'https://xtech-comment.liuqiao.top:8085',  // API 地址
         site: 'My VitePress Blog',
         pageKey: location.pathname,  // 当前页面唯一 ID
         pageTitle: document.title,  // 页面标题
