@@ -1,6 +1,6 @@
 # 🚀 x-tech 知识库
 
-[![GitHub Release](https://img.shields.io/github/v/release/whut-x-tech/01A?style=flat-square)](https://github.com/whut-x-tech/01A/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/whut-x-tech/01A?include_prereleases&style=flat-square)](https://github.com/whut-x-tech/01A/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 [![VitePress](https://img.shields.io/badge/VitePress-1.0.0-ff69b4.svg?style=flat-square)](https://vitepress.dev)
 
