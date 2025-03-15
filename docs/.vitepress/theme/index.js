@@ -1,12 +1,12 @@
 import DefaultTheme from 'vitepress/theme'
-import Artalk from '../components/Artalk.vue'
+import Artalk from './components/Artalk.vue' // ✅ 修正路径（前面加 `./`）
 
 export default {
   ...DefaultTheme,
-  enhanceApp({ app, router }) {
+  enhanceApp({ app }) {
     app.component('Artalk', Artalk)
 
-    // ✅ 仅在客户端加载 CSS，避免 `build` 报错
+    // ✅ 仅在客户端加载 Artalk CSS
     if (typeof window !== 'undefined') {
       const link = document.createElement('link')
       link.rel = 'stylesheet'
