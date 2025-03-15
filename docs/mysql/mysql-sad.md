@@ -142,3 +142,5 @@ public interface StockMapper extends BaseMapper<Stock> {
 ---
 
 🔚 **总结**：悲观锁是解决并发问题的重型武器，使用时需精准把控索引条件和事务范围。在高并发场景下，建议结合Redis分布式锁或乐观锁方案，根据业务特点选择最优解！
+
+<Artalk />
