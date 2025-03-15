@@ -1,0 +1,123 @@
+const GLOBAL_LOCALES_KEY = "ArtalkI18n";
+function defineLocaleExternal(lang, locale, aliases) {
+  if (!window[GLOBAL_LOCALES_KEY]) window[GLOBAL_LOCALES_KEY] = {};
+  window[GLOBAL_LOCALES_KEY][lang] = locale;
+  if (aliases)
+    aliases.forEach((l) => {
+      window[GLOBAL_LOCALES_KEY][l] = locale;
+    });
+  return locale;
+}
+const fr = defineLocaleExternal(
+  "fr",
+  {
+    /* Editor */
+    placeholder: "Laissez un commentaire",
+    noComment: "Pas de commentaire",
+    send: "Envoyer",
+    signIn: "Se connecter",
+    signUp: "S’inscrire",
+    save: "Sauvegarder",
+    nick: "Pseudo",
+    email: "Email",
+    link: "Site web",
+    emoticon: "Émoji",
+    preview: "Aperçu",
+    uploadImage: "Télécharger une image",
+    uploadFail: "Échec du téléchargement",
+    commentFail: "Échec du commentaire",
+    restoredMsg: "Le contenu a été restauré",
+    onlyAdminCanReply: "Seul l’administrateur peut répondre",
+    uploadLoginMsg: "Veuillez remplir votre nom et email pour télécharger",
+    /* List */
+    counter: "{count} Commentaires",
+    sortLatest: "Les plus récents",
+    sortOldest: "Les plus anciens",
+    sortBest: "Meilleurs",
+    sortAuthor: "Auteur",
+    openComment: "Ouvrir le commentaire",
+    closeComment: "Fermer le commentaire",
+    listLoadFailMsg: "Échec du chargement des commentaires",
+    listRetry: "Réessayer",
+    loadMore: "Charger plus",
+    /* Comment */
+    admin: "Administrateur",
+    reply: "Répondre",
+    voteUp: "Vote Pour",
+    voteDown: "Vote Contre",
+    voteFail: "Échec du vote",
+    readMore: "Lire la suite",
+    actionConfirm: "Confirmer",
+    collapse: "Réduire",
+    collapsed: "Réduit",
+    collapsedMsg: "Ce commentaire a été réduit",
+    expand: "Développer",
+    approved: "Approuvé",
+    pending: "En attente",
+    pendingMsg: "En attente, visible uniquement pour le commentateur.",
+    edit: "Modifier",
+    editCancel: "Annuler la modification",
+    delete: "Supprimer",
+    deleteConfirm: "Confirmer",
+    pin: "Épingler",
+    unpin: "Détacher",
+    /* Time */
+    seconds: "il y a quelques secondes",
+    minutes: "il y a quelques minutes",
+    hours: "il y a quelques heures",
+    days: "il y a quelques jours",
+    now: "à l’instant",
+    /* Checker */
+    adminCheck: "Entrez le mot de passe administrateur :",
+    captchaCheck: "Entrez le CAPTCHA pour continuer :",
+    confirm: "Confirmer",
+    cancel: "Annuler",
+    /* Sidebar */
+    msgCenter: "Messages",
+    ctrlCenter: "Tableau de bord",
+    /* Auth */
+    userProfile: "Profil",
+    noAccountPrompt: "Vous n’avez pas de compte ?",
+    haveAccountPrompt: "Vous avez déjà un compte ?",
+    forgetPassword: "Mot de passe oublié",
+    resetPassword: "Réinitialiser le mot de passe",
+    changePassword: "Changer le mot de passe",
+    confirmPassword: "Confirmer le mot de passe",
+    passwordMismatch: "Les mots de passe ne correspondent pas",
+    verificationCode: "Code de vérification",
+    verifySend: "Envoyer le code",
+    verifyResend: "Renvoyer",
+    waitSeconds: "Attendez {seconds}s",
+    emailVerified: "Email vérifié",
+    password: "Mot de passe",
+    username: "Nom d’utilisateur",
+    nextStep: "Étape suivante",
+    skipVerify: "Ignorer la vérification",
+    logoutConfirm: "Êtes-vous sûr de vouloir vous déconnecter ?",
+    accountMergeNotice: "Votre email a plusieurs comptes avec des identifiants différents.",
+    accountMergeSelectOne: "Veuillez sélectionner celui dans lequel vous souhaitez fusionner toutes les données.",
+    accountMergeConfirm: "Toutes les données seront fusionnées dans un compte, l’identifiant est {id}.",
+    dismiss: "Ignorer",
+    merge: "Fusionner",
+    /* General */
+    frontend: "Frontend",
+    backend: "Backend",
+    loading: "Chargement",
+    loadFail: "Échec du chargement",
+    editing: "Modification",
+    editFail: "Échec de la modification",
+    deleting: "Suppression",
+    deleteFail: "Échec de la suppression",
+    reqGot: "Requête reçue",
+    reqAborted: "La requête a expiré ou a été interrompue de manière inattendue",
+    updateMsg: "Veuillez mettre à jour Artalk {name} pour obtenir la meilleure expérience !",
+    currentVersion: "Version actuelle",
+    ignore: "Ignorer",
+    open: "Ouvrir",
+    openName: "Ouvrir {name}"
+  },
+  ["fr-FR"]
+);
+export {
+  fr as default
+};
