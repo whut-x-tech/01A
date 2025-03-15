@@ -59,10 +59,5 @@ theme: #32CD32
 :::
 
 
-<Badge type="info" text="最后更新：2024-05-20" />  
-<Badge type="tip" text="MIT Licensed" />
-<Badge type="warning" text="推荐 Chrome 浏览器" />
-
-
 
 <Artalk />
