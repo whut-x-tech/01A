@@ -34,11 +34,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       // { text: 'hello', link: '/' },
-      { text: '☕️ Java', link: '/java' },
-      { text: '🗄️ 数据库', link: '/mysql' },
-      { text: '🌐 前端', link: '/front' },
-      { text: '⚙️ 中间件', link: '/center' },
-      { text: '🚀 算法训练', link: '/leetcode' },
+      { text: '☕️ Java', link: '/java/', activeMatch: '/java/' },
+      { text: '🗄️ 数据库', link: '/mysql/', activeMatch: '/mysql/' },
+      { text: '🌐 前端', link: '/front/', activeMatch: '/front/' },
+      { text: '⚙️ 中间件', link: '/center/', activeMatch: '/center/' },
+      { text: '🚀 算法训练', link: '/leetcode/', activeMatch: '/leetcode/' },
     ],
 
     sidebar: {
