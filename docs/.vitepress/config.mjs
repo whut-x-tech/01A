@@ -87,10 +87,11 @@ export default defineConfig({
       ]
     },
 
-    // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/whut-x-tech/01A' }
+      { icon: 'github', link: 'https://github.com/whut-x-tech/01A' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/你的B站UID' } // 🔹 添加 Bilibili 主页
     ],
+    
 
     // 启用目录索引
     outline: 'deep', // 或者设置为数字，例如 2
