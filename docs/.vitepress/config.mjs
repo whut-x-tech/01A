@@ -89,7 +89,7 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/9lucifer' }
+      { icon: 'github', link: 'https://github.com/whut-x-tech/01A' }
     ],
 
     // 启用目录索引
