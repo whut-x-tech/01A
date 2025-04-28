@@ -23,6 +23,14 @@ export default defineConfig({
 
     // 导航栏
     nav: [
+      {
+        text:"后端开发",
+        items:[
+          {text:"Gitee",link:"/"},
+          {text:"GitHub",link:"/"},
+          {text:"CSDN",link:"/"},
+        ]
+      },
       { text: '☕️ Java', link: '/java/', activeMatch: '/java/' },
       { text: '🗄️ 数据库', link: '/mysql/', activeMatch: '/mysql/' },
       { text: '🌐 前端', link: '/front/', activeMatch: '/front/' },
