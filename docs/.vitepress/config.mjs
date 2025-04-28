@@ -15,9 +15,6 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png', 
     siteTitle: 'x-tech 🏠',
-    // siteTitle: false,
-
-    // ✅ 确保 VitePress 兼容 Pagefind 搜索
     search: {
       provider: 'local', // 启用本地搜索，Pagefind 会自动接管
     },
@@ -44,6 +41,7 @@ export default defineConfig({
       '/backend_router/':{
           text:"🗄️学习路线",
           items:[
+            { text: '写在前面', link: '/backend_router/info' },
             { text: 'java相关', link: '/backend_router/base' },
             { text: '数据库相关', link: '/backend_router/database' },
             { text: '中间件相关', link: '/backend_router/center' },
