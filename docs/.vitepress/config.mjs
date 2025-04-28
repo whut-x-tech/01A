@@ -13,8 +13,9 @@ export default defineConfig({
   ],
   
   themeConfig: {
-    logo: '/hero-image.png', 
+    logo: '/logo.png', 
     siteTitle: 'x-tech 🏠',
+    // siteTitle: false,
 
     // ✅ 确保 VitePress 兼容 Pagefind 搜索
     search: {
