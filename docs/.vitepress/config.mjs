@@ -26,9 +26,9 @@ export default defineConfig({
       {
         text:"后端开发",
         items:[
-          {text:"Gitee",link:"/"},
-          {text:"GitHub",link:"/"},
-          {text:"CSDN",link:"/"},
+          {text:"🗄️学习路线",link:"/"},
+          {text:"🚀速成版",link:"/"},
+          {text:"⚙️资源汇总",link:"/"},
         ]
       },
       { text: '☕️ Java', link: '/java/', activeMatch: '/java/' },
