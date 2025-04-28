@@ -26,7 +26,7 @@ export default defineConfig({
       {
         text:"后端开发",
         items:[
-          {text:"🗄️学习路线",link:"/"},
+          {text:"🗄️学习路线",link:"/backend_router"},
           {text:"🚀速成版",link:"/"},
           {text:"⚙️资源汇总",link:"/"},
         ]
@@ -40,6 +40,15 @@ export default defineConfig({
 
     // 侧边栏
     sidebar: {
+      '/backend_router/':{
+          text:"🗄️学习路线",
+          items:[
+            { text: 'java相关', link: '/backend_router/base' },
+            { text: '数据库相关', link: '/backend_router/database' },
+            { text: '中间件相关', link: '/backend_router/center' },
+            { text: '框架相关', link: '/backend_router/frame' },
+          ]
+      },
       '/java/': [
         {
           text: '后端学习',
