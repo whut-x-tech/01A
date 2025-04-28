@@ -130,8 +130,8 @@ export default defineConfig({
         text:"📝 简历撰写",
         items:[
           { text: '简历怎么写', link: '/resume/info' },
-          { text: '合格简历1', link: '/resume/resume1' },
-          { text: '合格简历2', link: '/resume/resume2' },
+          { text: '示范简历1', link: '/resume/resume1' },
+          { text: '示范简历2', link: '/resume/resume2' },
         ]
       }
 
