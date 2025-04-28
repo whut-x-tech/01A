@@ -22,18 +22,43 @@ export default defineConfig({
     // 导航栏
     nav: [
       {
-        text:"后端开发",
+        text:"🛠️后端开发",
         items:[
           {text:"🗄️学习路线",link:"/backend_router"},
           {text:"🚀速成版",link:"/"},
           {text:"⚙️资源汇总",link:"/"},
         ]
       },
-      { text: '☕️ Java', link: '/java/', activeMatch: '/java/' },
-      { text: '🗄️ 数据库', link: '/mysql/', activeMatch: '/mysql/' },
-      { text: '🌐 前端', link: '/front/', activeMatch: '/front/' },
-      { text: '⚙️ 中间件', link: '/center/', activeMatch: '/center/' },
-      { text: '🚀 算法训练', link: '/leetcode/', activeMatch: '/leetcode/' },
+      {
+        text: "🌐 前端开发",
+        items: [
+          { text: "📚 学习路线", link: "/frontend_router" },
+          { text: "🚀 速成版", link: "/frontend_quick" },
+          { text: "🔧 资源汇总", link: "/frontend_resources" }
+        ]
+      },
+      {
+        text: "📲 客户端开发",
+        items: [
+          { text: "📚 学习路线", link: "/client_guide" },
+          { text: "⚡ 速成版", link: "/client_quick" },
+          { text: "🛠️ 资源汇总", link: "/client_resources" }
+        ]
+      },
+      {
+        text: "💻 算法刷题",
+        items: [
+          { text: "📚 学习路线", link: "/algo_roadmap" },
+          { text: "🔢 经典题目", link: "/classic_problems" },
+          { text: "💡 解题技巧", link: "/problem_solving" }
+        ]
+      },
+      { text: '📝 简历撰写', link: '/resume/', activeMatch: '/resume/' },
+      { 
+        text: '💬 X-Nexus', 
+        link: 'https://www.cnblogs.com/', // 必须添加 .html 扩展名
+        target: '_blank' // 添加新标签页打开（可选）
+      },
     ],
 
     // 侧边栏
@@ -100,7 +125,16 @@ export default defineConfig({
             { text: '📝 基础算法：快速排序和归并排序', link: '/leetcode/quick_merge' },
           ]
         }
-      ]
+      ],
+      '/resume/':{
+        text:"📝 简历撰写",
+        items:[
+          { text: '简历怎么写', link: '/resume/info' },
+          { text: '合格简历1', link: '/resume/resume1' },
+          { text: '合格简历2', link: '/resume/resume2' },
+        ]
+      }
+
     },
 
     socialLinks: [
