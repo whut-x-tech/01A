@@ -6,11 +6,14 @@
 
 #### 1.1.1推荐网站
 
-​	100dayscss.com（css练习网站 ）、
+​	100dayscss.com（css练习网站 ）
+![alt text](css-learn.png)
 
 #### 1.1.2推荐书籍
 
 ​	1、红宝书（JavaScript高级程序设计）
+![alt text](js-book.png)
+下载链接：https://raw.githubusercontent.com/Mrrabbitan/learningMaterials/master/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.pdf
 
 ### 1.2框架
 
@@ -57,9 +60,9 @@
 #### 3.1.1推荐网站
 
 [「2021」高频前端面试题汇总之CSS篇2021 高频前端面试题汇总之CSS篇，前端面试题汇总系列文章的CSS篇，长期更 - 掘金](https://juejin.cn/post/6905539198107942919#heading-10)
-
+![alt text](front-resume1.png)
 [前端面试派](https://www.mianshipai.com/)
-
+![alt text](front-resume2.png)
 ### 3.2手撕
 
 ​	前端面试手撕有两种，一种是常规算法题，一种是语言特性题，这里重点讲后者。
@@ -67,7 +70,7 @@
 ​	语言特定重点考察js的一些语言特性，例如手撕对象继承，手撕一些常用的api，例如call()、apply()、bind()、Promise.all()等，这里推荐一个视频。
 
 [【优化中...】死磕36道JS手写题，搞定后提升真挺大！【一起啃书】【嗨Sirius】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1P44y1y7YT/?spm_id_from=333.337.search-card.all.click&vd_source=812d48a2999659cc6302663e877b0761)
-
+![alt text](js-hand.png)
 
 ---
 | **作者**：不称职演说家 | <a href="https://github.com/lyl135321"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" style="vertical-align: middle;"></a> |
