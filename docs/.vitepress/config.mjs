@@ -25,7 +25,7 @@ export default defineConfig({
         text:"🛠️后端开发",
         items:[
           {text:"🗄️学习路线",link:"/backend_router"},
-          {text:"🚀速成版",link:"/"},
+          {text:"🚀速成版",link:"/backend_router/fast"},
           {text:"⚙️资源汇总",link:"/"},
         ]
       },
