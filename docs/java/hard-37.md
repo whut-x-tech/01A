@@ -5,7 +5,7 @@
 
 ---
 
-### 🧩 代码全景透视
+### 🧩 代码全透视
 ```java
 class Solution {
     public void solveSudoku(char[][] board) {
