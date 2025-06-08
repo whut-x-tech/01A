@@ -25,26 +25,26 @@ export default defineConfig({
         text:"🛠️后端开发",
         items:[
           {text:"🗄️学习路线",link:"/backend_router"},
-          {text:"🚀速成版",link:"/backend_router/fast"},
-          {text:"⚙️资源汇总",link:"/"},
+          // {text:"🚀速成版",link:"/backend_router/fast"},
+          // {text:"⚙️资源汇总",link:"/"},
         ]
       },
       {
         text: "🌐 前端开发",
         items: [
           { text: "📚 学习路线", link: "/frontend_router" },
-          { text: "🚀 速成版", link: "/frontend_quick" },
-          { text: "🔧 资源汇总", link: "/frontend_resources" }
+          // { text: "🚀 速成版", link: "/frontend_quick" },
+          // { text: "🔧 资源汇总", link: "/frontend_resources" }
         ]
       },
-      {
-        text: "📲 客户端开发",
-        items: [
-          { text: "📚 学习路线", link: "/client_guide" },
-          { text: "⚡ 速成版", link: "/client_quick" },
-          { text: "🛠️ 资源汇总", link: "/client_resources" }
-        ]
-      },
+      // {
+      //   text: "📲 客户端开发",
+      //   items: [
+      //     { text: "📚 学习路线", link: "/client_guide" },
+      //     { text: "⚡ 速成版", link: "/client_quick" },
+      //     { text: "🛠️ 资源汇总", link: "/client_resources" }
+      //   ]
+      // },
       {
         text: "💻 算法刷题",
         items: [
