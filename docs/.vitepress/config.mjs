@@ -49,16 +49,16 @@ export default defineConfig({
         text: "💻 算法刷题",
         items: [
           { text: "📚 学习路线", link: "/algo_roadmap" },
-          { text: "🔢 经典题目", link: "/classic_problems" },
-          { text: "💡 解题技巧", link: "/problem_solving" }
+          // { text: "🔢 经典题目", link: "/classic_problems" },
+          // { text: "💡 解题技巧", link: "/problem_solving" }
         ]
       },
       { text: '📝 简历撰写', link: '/resume/', activeMatch: '/resume/' },
-      { 
-        text: '💬 X-Nexus', 
-        link: 'https://www.cnblogs.com/', // 必须添加 .html 扩展名
-        target: '_blank' // 添加新标签页打开（可选）
-      },
+      // { 
+      //   text: '💬 X-Nexus', 
+      //   link: 'https://www.cnblogs.com/', // 必须添加 .html 扩展名
+      //   target: '_blank' // 添加新标签页打开（可选）
+      // },
     ],
 
     // 侧边栏
