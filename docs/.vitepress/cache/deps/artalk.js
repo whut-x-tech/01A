@@ -1,3 +1,5 @@
+import "./chunk-BUSYA2B4.js";
+
 // node_modules/.pnpm/artalk@2.9.1_marked@14.1.4/node_modules/artalk/dist/Artalk.mjs
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
