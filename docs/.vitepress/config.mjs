@@ -27,6 +27,7 @@ export default defineConfig({
           {text:"🗄️学习路线",link:"/backend_router"},
           // {text:"🚀速成版",link:"/backend_router/fast"},
           // {text:"⚙️资源汇总",link:"/"},
+          {text:"⚙️面经收集", link: "/backend_review" },
         ]
       },
       {
@@ -72,6 +73,14 @@ export default defineConfig({
             { text: '中间件相关', link: '/backend_router/center' },
             { text: '框架相关', link: '/backend_router/frame' },
           ]
+      },
+      '/backend_review/':{
+        text:"⚙️面经收集",
+        items:[
+          { text: '作业帮-Java', link: '/backend_review/zyb_0612' }
+          // { text: 'Python', link: '/backend_review/python' },
+          // { text: 'Go', link: '/backend_review/go' },
+        ]
       },
       '/java/': [
         {
