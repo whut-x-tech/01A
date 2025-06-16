@@ -9,10 +9,8 @@
 🌐 在线访问：[https://whut-x-tech.github.io/01A/](https://whut-x-tech.github.io/01A/)
 
 ## 🧭 内容导航
-- 🧠 算法训练中心：LeetCode高频题解/代码模板
-- ⚙️ 中间件矩阵：MongoDB/RabbitMQ/Spring Security
-- 🛡️ 安全体系：RBAC/鉴权方案对比
-- 🚄 工程化实践：线程池/源码解析
+- 🧠 wuter计算机快速就业指南
+- ⚙️  全模块精要介绍（技术栈准备，算法准备，简历准备）
 
 ## 🛠️ 技术栈
 - **文档框架**: VitePress 1.6.3
