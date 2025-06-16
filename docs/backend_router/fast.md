@@ -1,10 +1,6 @@
 # Java 后端学习路线
 
-
-
 **这个路线完全面向于找后端工作，会给出最稳定的学习路线**
-
-
 
 ## java 语言的学习
 
@@ -36,14 +32,14 @@
 
 在韩顺平 java 中就提到过，但是 MySQL 中的进阶点的知识也是需要学习的，这里推荐经典黑马的 MySQL
 
+### 入门学习
 【黑马程序员 MySQL数据库入门到精通，从mysql安装到mysql高级、mysql优化全囊括】https://www.bilibili.com/video/BV1Kr4y1i7ru?vd_source=94f7ec5135fe225cc2503acda330c046
-
-
-
-暂时学习完基础篇和进阶篇就行，等以后要提升了再看运维篇和 MySQL 45，进阶篇最好过一段时间就温习一次，很可能会温故而知新
-
 ![image-20250517223610578](./image-20250517223610578.png)
+暂时学习完基础篇和进阶篇就行，等以后要提升了再看运维篇和**MySQL 45**，进阶篇最好过一段时间就温习一次，很可能会温故而知新
 
+### 进阶学习-Mysql45讲
+![alt text](image-7.png)
+地址：https://github.com/boollife/mysql45
 
 
 ## java web
