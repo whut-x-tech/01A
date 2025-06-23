@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 学习路线
-      link: /route
+      link: /backend_router
     - theme: alt
       text: 木犀101
       link: https://muxi-studio.github.io/101/
