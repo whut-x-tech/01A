@@ -60,6 +60,9 @@ export default defineConfig({
       //   link: 'https://www.cnblogs.com/', // 必须添加 .html 扩展名
       //   target: '_blank' // 添加新标签页打开（可选）
       // },
+      {
+        text:'nexTop:打卡榜',link:'http://120.46.27.50:8011/',target: '_blank'
+      }
     ],
 
     // 侧边栏

@@ -1,1 +1,1 @@
-![alt text](免费在线简历制作工具-CodeCV简历.png)
+![免费在线简历制作工具-CodeCV简历.png](http://imgtu.oss-cn-beijing.aliyuncs.com/png/2025_06_24/83c288ca06064169b49910da2adde2d5.png)

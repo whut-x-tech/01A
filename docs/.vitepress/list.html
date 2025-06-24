@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Layui Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/layui@2.9.6/dist/css/layui.css" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      padding: 15px;
+    }
+    .main-container {
+      display: flex;
+      min-height: 600px;
+    }
+    .table-container {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-right: 15px;
+    }
+    .detail-panel-container {
+      width: 650px;
+      position: sticky;
+      top: 15px;
+      height: calc(100vh - 30px);
+      overflow-y: auto;
+    }
+    .detail-container {
+      padding: 25px;
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .detail-header {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      color: #009688;
+    }
+    .detail-item {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #f0f0f0;
+    }
+    .detail-item:last-child {
+      border-bottom: none;
+    }
+    .detail-label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 15px;
+    }
+    .detail-value {
+      padding: 8px 12px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      min-height: 20px;
+    }
+    .tag-yes {
+      display: inline-block;
+      padding: 2px 8px;
+      background-color: #5FB878;
+      color: white;
+      border-radius: 4px;
+    }
+    .tag-no {
+      display: inline-block;
+      padding: 2px 8px;
+      background-color: #ddd;
+      color: #666;
+      border-radius: 4px;
+    }
+    .page-title {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+    .layui-table-cell {
+      height: auto;
+      line-height: 28px;
+    }
+    .empty-detail-placeholder {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 14px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="table-container">
+            <div class="page-title">打卡记录列表</div>
+            <table class="layui-hide" id="ID-table-demo-data"></table>
+        </div>
+        <div class="detail-panel-container">
+            <div id="emptyDetailPlaceholder" class="empty-detail-placeholder">
+                <div>
+                    <i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+                    <p>点击查看按钮显示详情</p>
+                </div>
+            </div>
+            <div id="userDetailPanel" class="detail-container">
+                <h2 class="detail-header">打卡详情</h2>
+                <div class="detail-item">
+                    <div class="detail-label">学习时长</div>
+                    <div id="detail-study-time" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">学习记录</div>
+                    <div id="detail-study-record" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">简历投递数</div>
+                    <div id="detail-resume-submissions" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">是否面试</div>
+                    <div id="detail-interview-record" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">面试详情</div>
+                    <div id="detail-interview-details" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">是否有Offer</div>
+                    <div id="detail-offer" class="detail-value"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Offer详情</div>
+                    <div id="detail-offer-details" class="detail-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Layui JS -->
+<script src="https://cdn.jsdelivr.net/npm/layui@2.9.6/dist/layui.js"></script>
+<script>
+layui.use(['table', 'layer'], function(){
+  var table = layui.table;
+  var layer = layui.layer;
+
+  // 从后端获取数据并渲染表格
+  var inst = table.render({
+    elem: '#ID-table-demo-data',
+    url: 'http://localhost:8107/api/check/getAll4backend', // 后端接口地址
+    method: 'get',
+    parseData: function(res){ // 解析后端返回的数据
+      console.log(res);
+
+      if(res.code === 0){ // 成功状态码
+        // 确保ID是字符串格式
+        if(res.data && res.data.length) {
+          res.data.forEach(function(item) {
+            // 确保ID是字符串格式
+            if(item.id) {
+              // 如果后端已经返回字符串格式，则不需要转换
+              if(typeof item.id !== 'string') {
+                item.id = item.id.toString();
+              }
+            }
+
+            // 格式化日期时间
+            if(item.checkInTime) {
+              item.formattedTime = layui.util.toDateString(new Date(item.checkInTime), 'yyyy-MM-dd HH:mm:ss');
+            }
+          });
+        }
+        return {
+          "code": 0,
+          "msg": "",
+          "count": res.data.length,
+          "data": res.data
+        };
+      } else {
+        return {
+          "code": res.code,
+          "msg": res.message,
+          "count": 0,
+          "data": []
+        };
+      }
+    },
+    cols: [[ //标题栏
+      {type: 'numbers', title: '序号', width: 60},
+      {field: 'id', title: 'ID', width: 180, sort: true}, // 增加宽度以显示完整ID
+      {field: 'userAccount', title: '学号', width: 120, sort: true},
+      {field: 'formattedTime', title: '打卡时间', width: 180, sort: true}, // 使用预格式化的时间
+      {field: 'studyTime', title: '学习时长', width: 100, sort: true},
+      {title: '操作', width: 180, align: 'center', toolbar: '#barDemo', fixed: 'right'}
+    ]],
+    skin: 'line',
+    even: true,
+    size: 'lg',
+    height: 'full-100',
+    page: true,
+    limits: [5, 10, 15],
+    limit: 10,
+    request: {
+      pageName: 'page', // 页码的参数名称
+      limitName: 'limit' // 每页数据量的参数名称
+    },
+    response: {
+      statusName: 'code', // 规定数据状态的字段名称
+      statusCode: 0, // 规定成功的状态码
+      msgName: 'msg', // 规定状态信息的字段名称
+      countName: 'count', // 规定数据总数的字段名称
+      dataName: 'data' // 规定数据列表的字段名称
+    }
+  });
+
+  // 监听工具条
+  table.on('tool(ID-table-demo-data)', function(obj){
+    var data = obj.data;
+    if(obj.event === 'detail'){
+      showUserDetail(data);
+    } else if(obj.event === 'print') {
+      // 弹出确认框
+      layer.confirm('确定要将该记录设为精选吗？', {
+        btn: ['确定','取消'],
+        title: '设为精选'
+      }, function(index){
+        // 使用原始ID字符串，不进行任何转换
+        var requestUrl = 'http://localhost:8107/api/check/putRecommendations?id=' + data.id;
+        console.log("发送请求URL:", requestUrl); // 调试日志
+
+        fetch(requestUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(result => {
+          if(result.code === 0) {
+            layer.msg('设置精选成功', {icon: 1});
+            // 可以选择刷新表格
+            table.reload('ID-table-demo-data');
+          } else {
+            layer.msg('设置精选失败: ' + result.message, {icon: 2});
+          }
+        })
+        .catch(error => {
+          layer.msg('请求出错: ' + error, {icon: 2});
+          console.error('Error:', error);
+        })
+        .finally(() => {
+          layer.close(index);
+        });
+      });
+    }
+  });
+
+  // 显示用户详情
+  function showUserDetail(data) {
+    document.getElementById('detail-study-time').textContent = data.studyTime + ' 分钟'; // 修改为studyTime
+    document.getElementById('detail-study-record').textContent = data.studyRecord || '无'; // 修改为studyRecord
+    document.getElementById('detail-resume-submissions').textContent = data.resumeSubmissions || '0'; // 修改为resumeSubmissions
+
+    // 使用标签样式显示是否
+    var interviewEl = document.getElementById('detail-interview-record');
+    interviewEl.innerHTML = data.interviewRecord == 1 ? // 修改为interviewRecord
+      '<span class="tag-yes">是</span>' :
+      '<span class="tag-no">否</span>';
+
+    document.getElementById('detail-interview-details').textContent = data.interviewDetails || '无'; // 修改为interviewDetails
+
+    var offerEl = document.getElementById('detail-offer');
+    offerEl.innerHTML = data.offer == 1 ?
+      '<span class="tag-yes">是</span>' :
+      '<span class="tag-no">否</span>';
+
+    document.getElementById('detail-offer-details').textContent = data.offerDetails || '无'; // 修改为offerDetails
+
+    document.getElementById('emptyDetailPlaceholder').style.display = 'none';
+    document.getElementById('userDetailPanel').style.display = 'block';
+  }
+
+  // 处理请求失败的情况
+  table.on('error', function(obj){
+    layer.msg('数据请求失败', {icon: 2});
+    console.error(obj);
+  });
+});
+</script>
+
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="print">设为精选</a>
+</script>
+
+</body>
+</html>
