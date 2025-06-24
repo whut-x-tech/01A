@@ -10,11 +10,6 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
     // 现代浏览器适配
     ['link', { rel: 'icon', href: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' }],
-    'script',
-    {
-      src:'https://ems.sh/giscus',
-      type:'module'
-    }
   ],
   
   themeConfig: {
