@@ -62,6 +62,8 @@ export default defineConfig({
       // },
       {
         text:'nexTop:打卡榜',link:'http://120.46.27.50:8011/',target: '_blank'
+      },{
+        text:'学长大厂说',link:'/shixi/'
       }
     ],
 
