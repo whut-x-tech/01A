@@ -147,6 +147,12 @@ export default defineConfig({
           { text: '示范简历1', link: '/resume/resume1' },
           { text: '示范简历2', link: '/resume/resume2' },
         ]
+      },
+      '/shixi/':{
+        text:"学长大厂说",
+        items:[
+          { text: '大厂见闻录——后端单测', link: '/shixi/dance' },
+        ]
       }
 
     },
