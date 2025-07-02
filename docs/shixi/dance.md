@@ -32,7 +32,35 @@
 
 > 一切跨类跨系统的测试都不是单元测试
 
-#### Mockito用法
+#### Mockito实战
+> demo地址：https://github.com/9lucifer/testMockito
+> demo介绍：模拟有数据库场景的单元测试
+
+**核心maven坐标**：
+```java
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+```
+
+#### Mockito语法
 
 Mockito 不能对以下内容进行模拟（mock）或间谍（spy）：
 
