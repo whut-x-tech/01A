@@ -34,6 +34,7 @@ export default defineConfig({
         text: "🌐 前端开发",
         items: [
           { text: "📚 学习路线", link: "/frontend_router" },
+          { text:"🔧 优质资源整理",link:"/front/fronted_resources"}
           // { text: "🚀 速成版", link: "/frontend_quick" },
           // { text: "🔧 资源汇总", link: "/frontend_resources" }
         ]
@@ -101,9 +102,8 @@ export default defineConfig({
         {
           text: '前端学习',
           items: [
-            { text: '🎨 Mark.js 的使用指南', link: '/front/mark-js' },
-            { text: '📄 Mammoth.js 渲染 Word 文档为 HTML：详细教程 🚀', link: '/front/Mammoth-js' },
-            { text: '🚀 后端程序员好上手的前端框架——layui', link: '/front/layui-admin' },
+            // { text: '🎨 Mark.js 的使用指南', link: '/front/mark-js' },
+            { text:"🔧 优质资源整理",link:"/front/fronted_resources"}
           ]
         }
       ],
